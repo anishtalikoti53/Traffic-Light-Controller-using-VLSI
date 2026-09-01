@@ -1,0 +1,39 @@
+# Simulation outputs
+*.vcd
+*.vvp
+*.fst
+*.lxt
+*.lxt2
+
+# Verilog/Vivado generated files
+*.jou
+*.log
+*.pb
+*.wdb
+*.str
+*.rpt
+*.bit
+*.bin
+
+# Vivado project directories
+.vivado/
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.srcs/
+.runs/
+.xpr
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+out/
+tmp/
