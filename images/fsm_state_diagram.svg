@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<rect width="1100" height="620" fill="white"/>
+<text x="550" y="42" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold">Five-State Traffic Light Controller FSM</text>
+<g font-family="Arial" font-size="17" text-anchor="middle">
+<ellipse cx="180" cy="220" rx="105" ry="55" fill="#d9f2d9" stroke="#333" stroke-width="3"/><text x="180" y="213" font-weight="bold">S0</text><text x="180" y="238">Hwy G / Entry R</text>
+<ellipse cx="430" cy="120" rx="105" ry="55" fill="#fff2b3" stroke="#333" stroke-width="3"/><text x="430" y="113" font-weight="bold">S1</text><text x="430" y="138">Hwy Y / Entry R</text>
+<ellipse cx="700" cy="120" rx="105" ry="55" fill="#f2d9d9" stroke="#333" stroke-width="3"/><text x="700" y="113" font-weight="bold">S2</text><text x="700" y="138">Hwy R / Entry R</text>
+<ellipse cx="900" cy="300" rx="105" ry="55" fill="#d9f2d9" stroke="#333" stroke-width="3"/><text x="900" y="293" font-weight="bold">S3</text><text x="900" y="318">Hwy R / Entry G</text>
+<ellipse cx="620" cy="475" rx="105" ry="55" fill="#fff2b3" stroke="#333" stroke-width="3"/><text x="620" y="468" font-weight="bold">S4</text><text x="620" y="493">Hwy R / Entry Y</text>
+</g>
+<g stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrow)">
+<path d="M270 190 C320 155 340 135 325 125"/>
+<path d="M535 120 H595"/>
+<path d="M785 145 C850 175 885 205 900 245"/>
+<path d="M845 340 C790 400 750 440 710 460"/>
+<path d="M515 475 C380 500 245 430 190 275"/>
+<path d="M110 175 C40 110 50 40 175 50 C270 55 295 105 245 170"/>
+<path d="M980 300 C1060 290 1060 390 975 350"/>
+</g>
+<g font-family="Arial" font-size="16" fill="#333">
+<text x="300" y="155">X=1</text><text x="560" y="105">always</text><text x="820" y="185">always</text><text x="760" y="400">X=0</text><text x="345" y="485">always</text><text x="75" y="92">X=0</text><text x="990" y="375">X=1</text>
+</g>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+<text x="550" y="570" text-anchor="middle" font-family="Arial" font-size="16">clear=1 forces S0. X is the entry-road vehicle detection input.</text>
+</svg>
