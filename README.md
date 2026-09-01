@@ -18,7 +18,25 @@ A Verilog HDL implementation of a synchronous Finite State Machine (FSM) based T
 
 The controller regulates two roads using a synchronous FSM. A vehicle-detection input `X` determines when traffic waiting on the entry road should be given the right-of-way. An active-high `clear` input returns the controller to its initial highway-priority state.
 
-### State Sequence Used in the Verilog Design
+## Visual Overview
+
+### RTL Architecture
+
+![Traffic Light Controller RTL Architecture](images/architecture_block_diagram.svg)
+
+### Five-State FSM
+
+![Traffic Light Controller Five-State FSM](images/fsm_state_diagram.svg)
+
+### Waveform Reference
+
+The original project waveform screenshot is not available anymore. Rather than presenting another project's waveform as if it were yours, the repository includes an external traffic-controller waveform as a **reference visual only**. It demonstrates the kind of ModelSim waveform used to verify an FSM traffic controller. The repository's own waveform can be regenerated at any time using the included testbench and GTKWave commands below.
+
+![External traffic controller waveform reference](https://www.ijraset.com/images/text_version_uploads/9_103.png)
+
+*External reference visual: IJRASSET, “Design and Simulation of an Optimized Traffic Controller Using Moore FSM.”*
+
+## State Sequence Used in the Verilog Design
 
 | State | Highway | Entry Road | Transition condition |
 |---|---|---|---|
@@ -63,6 +81,10 @@ Traffic-Light-Controller-using-VLSI/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
+├── images/
+│   ├── README.md
+│   ├── architecture_block_diagram.svg
+│   └── fsm_state_diagram.svg
 ├── docs/
 │   ├── DESIGN.md
 │   └── PROJECT_REPORT.md
@@ -139,7 +161,7 @@ The supplied testbench exercises reset, no-vehicle conditions, vehicle arrival, 
 
 ## Project Documentation
 
-A structured project report and design notes are available under [`docs/`](docs/). The original academic report can also be retained separately as a PDF/DOCX if desired.
+A structured project report and design notes are available under [`docs/`](docs/). Visual assets are available under [`images/`](images/).
 
 ## References
 
